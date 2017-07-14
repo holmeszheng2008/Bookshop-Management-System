@@ -1,0 +1,63 @@
+#if !defined(AFX_BOOKMANAGEDLG0_H__5DDB8202_613C_429C_9675_49E6F4AD4899__INCLUDED_)
+#define AFX_BOOKMANAGEDLG0_H__5DDB8202_613C_429C_9675_49E6F4AD4899__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+// BookManageDlg0.h : header file
+//
+
+/////////////////////////////////////////////////////////////////////////////
+// CBookManageDlg0 dialog
+
+class CBookManageDlg0 : public CDialog
+{
+// Construction
+public:
+	CBookManageDlg0(CWnd* pParent = NULL);	// standard constructor
+
+// Dialog Data
+	//{{AFX_DATA(CBookManageDlg)
+	enum { IDD = IDD_BOOKMANAGE_DIALOG0 };
+		// NOTE: the ClassWizard will add data members here
+	//}}AFX_DATA
+
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CBookManageDlg)
+	protected:
+	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
+	//}}AFX_VIRTUAL
+
+// Implementation
+protected:
+	HICON m_hIcon;
+
+	// Generated message map functions
+	//{{AFX_MSG(CBookManageDlg)
+	virtual BOOL OnInitDialog();
+	afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
+	afx_msg void OnPaint();
+	afx_msg HCURSOR OnQueryDragIcon();
+	afx_msg void OnADD();
+	afx_msg void OnAbout();
+	afx_msg void OnExit();
+	afx_msg void OnStockRecord();
+	afx_msg void OnSupplyPrice();
+	afx_msg void OnRefundRecord();
+	afx_msg void OnRefundOpera();
+	afx_msg void OnVendRecord();
+	afx_msg void OnVendByday();
+	afx_msg void OnVendList();
+	afx_msg void OnVendConsole();
+	afx_msg void OnAddopera();
+	afx_msg void OnOperaStatic();
+	afx_msg void OnCHANGEUSR();
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+public:
+	void SetInfor();
+};
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_BOOKMANAGEDLG0_H__5DDB8202_613C_429C_9675_49E6F4AD4899__INCLUDED_)
